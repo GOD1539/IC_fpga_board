@@ -6,7 +6,7 @@ wire [6:0] C;
 wire [3:0] D;
 
 PE_array(C, A, B, clk);  
-PolyReduction(D, clk, sel, C); 
+PolyReduction(D, C); 
 PolyAddition(result, polyadd, D);     
          
 endmodule
